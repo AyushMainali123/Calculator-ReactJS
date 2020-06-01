@@ -1,0 +1,45 @@
+.Calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.Calculator .textfield{
+    display: flex;
+    flex-direction: column;
+}
+.buttonsfield{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsfield>div{
+    display: grid;
+}
+
+.buttonsfield>div{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttonsfield>div:nth-child(1){
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.buttonsfield>:nth-child(5){
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+input{
+    padding: .5rem;
+    text-align: right;
+    color: white;
+    font-family:sans-serif, Arial, Helvetica;
+    font-size: 1.4rem;
+    background-color: rgb(31, 29, 29);
+    outline: none;
+    border: none;
+}
+input.result{
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+}
